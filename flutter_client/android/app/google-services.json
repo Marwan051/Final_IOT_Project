@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "300490611997",
+    "project_id": "final-project-iot-fb03b",
+    "storage_bucket": "final-project-iot-fb03b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300490611997:android:58697feb2b805916fa95f4",
+        "android_client_info": {
+          "package_name": "iot.project.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEYEtMnbWmnJqoL81dzs6pob8HGH70EUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
