@@ -1,3 +1,9 @@
 # flutter_client
 
-A new Flutter project.
+## To resolve dependencies
+
+```bash
+flutter pub get
+```
+
+## to try the app run main.app
