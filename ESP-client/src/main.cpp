@@ -9,8 +9,8 @@
 #include <ESP32Servo.h>
 
 // WiFi and HiveMQ Cloud credentials
-const char *ssid = "Marwan's Galaxy A23";                                        // Your Wi-Fi SSID (use Wokwi for simulation)
-const char *password = "smbe6756";                                               // Wokwi doesn't require a password
+const char *ssid = "DESKTOP-2O81LG5 1769";                                       // Your Wi-Fi SSID (use Wokwi for simulation)
+const char *password = "3Z&1b628";                                               // Wokwi doesn't require a password
 const char *mqtt_server = "b68b626745dd4b16b1352e00c3c031ed.s1.eu.hivemq.cloud"; // HiveMQ Cloud broker URL
 const int mqtt_port = 8883;                                                      // Secure MQTT port for HiveMQ Cloud
 
@@ -41,7 +41,7 @@ DHT dht(DHTPIN, DHTTYPE);
 #define SERVO_PIN 18      // GPIO pin connected to the servo motor
 
 unsigned long previousTime = millis() - 60000; // Store the last time the event was triggered
-const unsigned long interval = 6000;           // 1 minute in milliseconds
+const unsigned long interval = 60000;          // 1 minute in milliseconds
 
 int displayMode = 1;                     // Variable to track the current display mode (1, 2, or 3)
 unsigned long modeSwitchTime = 0;        // Timer to switch modes every second

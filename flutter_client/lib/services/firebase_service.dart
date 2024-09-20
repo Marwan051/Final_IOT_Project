@@ -2,7 +2,6 @@ import 'dart:developer';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/foundation.dart';
 
 class FirebaseService {
   final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -33,7 +32,7 @@ class FirebaseService {
           .get();
       return querySnapshot.docs
           .map((doc) => Score(
-                score: clampDouble(doc['score'], 0.0, 100.0),
+                score: doc['score'].toDouble(),
                 timestamp: doc['timestamp'].toDate(),
               ))
           .toList();
@@ -56,7 +55,7 @@ class Score {
 
   Map<String, dynamic> toMap() {
     return {
-      'score': score,
+      'score': score.toDouble(),
       'timestamp': timestamp,
     };
   }
